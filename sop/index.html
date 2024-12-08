@@ -10,7 +10,7 @@
     />
     <style>
       body {
-        background-image: url("assets/bg.avif");
+        background-image: url("../assets/bg.avif");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -20,51 +20,43 @@
 
       .container {
         text-align: center;
-        height: 100vh;
+        margin-top: 50px;
       }
 
       .title {
         font-size: 5em;
         font-weight: bold;
-        color: #333;
-        margin-bottom: 10px;
-      }
-
-      .col {
-        margin-top: 150px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .button {
-        background-color: #47bcff;
         color: black;
+        margin-bottom: 10px;
+        background-color: #47bcff;
         padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 3em;
-        font-weight: bold;
         border-radius: 20px;
-        margin: 20px;
-        width: 70%;
+        margin-bottom: 50px;
       }
 
-      .button:hover {
-        background-color: #3e8e41;
+      .btn {
+        font-size: 1.5em;
+        font-weight: bold;
+        width: 100%;
+      }
+
+      .dropdown-menu {
+        text-align: left;
+        font-size: 1.5em;
+        width: 100%;
       }
     </style>
   </head>
-
   <body>
     <div class="container">
-      <h1 class="title">NURSING POCKET</h1>
-      <div class="col">
-        <a href="informasi/index.html" class="button">Informasi Tanda Vital</a>
-        <a href="sop/index.html" class="button">SOP Tindakan Keperawatan</a>
-        <a href="kalkulator/index.html" class="button">Nursing Kalkulator</a>
+      <h1 class="title">SOP Tindakan Keperawatan</h1>
+      <div class="dropdown">
+        <a
+          class="btn btn-primary"
+          href="cuci_tangan_biasa_dan_antiseptik.html"
+        >
+        CUCI TANGAN BIASA DAN ANTISEPTIK
+        </a>
       </div>
     </div>
     <script
