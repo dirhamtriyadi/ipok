@@ -45,42 +45,29 @@
         font-size: 1.5em;
         width: 100%;
       }
+
+      ul {
+        text-align: left;
+      }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1 class="title">Nursing Kalkulator</h1>
-      <div class="dropdown">
-        <button
-          class="btn btn-primary dropdown-toggle"
-          type="button"
-          id="dropdownTekananDarah"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          Rumus tetesan infus
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownTekananDarah">
-          <li><a class="dropdown-item" href="infus_makro.html">Rumus Tetesan Infus Makro</a></li>
-          <li><a class="dropdown-item" href="infus_mikro.html">Rumus Tetesan Infus Mikro</a></li>
+        <h1>Tetesan infus mikro</h1>
+        <p><b>Rumus:</b> Tetesan per menit = Volume cairan (ml) x Faktor tetesan</p>
+        <p><b>Keterangan</b></p>
+        <ul>
+            <li>Volume cairan: Total cairan yang akan diberikan dalam mililiter (ml).</li>
+            <li>Faktor tetesan: 60 untuk set mikro</li>
+            <li>Waktu: Durasi pemberian cairan dalam menit.</li>
         </ul>
-      </div>
-      <div class="dropdown mt-3">
-        <button
-          class="btn btn-primary dropdown-toggle"
-          type="button"
-          id="dropdownNadi"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          Rumus dosis obat
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownNadi">
-          <li><a class="dropdown-item" href="nadi_anak.html">Dosis Berdasarkan Berat Badan</a></li>
-          <li><a class="dropdown-item" href="nadi_dewasa.html">Dosis Berdasarkan Permukaan Tubuh (Body Surface Area - BSA)</a></li>
-          <li><a class="dropdown-item" href="nadi_dewasa.html">Dosis Cairan atau Obat Intravena</a></li>
+        <p>Contoh mikro:</p>
+        <ul>
+            <li>Volume cairan = 500 ml </li>
+            <li>Faktor tetesan = 60 </li>
+            <li>Waktu = 8 jam (480 menit)</li>
         </ul>
-      </div>
+        <p><b>Hasil:</b> Tetesan per menit = 500 ml x 60 / 480 menit = 63 tetesan per menit</p>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
